@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useParams, usePathname, useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { IoMenu, IoClose, IoChevronDown, IoChevronUp } from "react-icons/io5";
@@ -19,7 +20,6 @@ export default function Navbar() {
   };
 
   const toggleServiceDropdown = () => {
-    
     setIsServiceDropdownOpen((prevState) => !prevState);
   };
 
@@ -30,8 +30,8 @@ export default function Navbar() {
   };
 
   const toggleServiceOpen = () => {
-    setIsAboutDropdownOpen(false)
     setIsServiceOpen((prevState) => !prevState);
+    setIsAboutDropdownOpen(false)
   };
 
  
@@ -44,7 +44,13 @@ export default function Navbar() {
       <nav className="flex justify-between z-50 items-center py-6 px-8 shadow-md bg-slate-100 text-black">
         <div className="flex items-center">
           <Link href={"/"}>
-            <h1 className="ml-2">Softech</h1>
+            <Image 
+              src="/images/softech.png"
+              width={1000}
+              height={1000}
+              alt="softech image"
+              className="w-[8rem] h-8"
+            />
           </Link>
         </div>
 
