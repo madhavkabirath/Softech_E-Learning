@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function description() {
+export default function Description() {
   return (
     <div className=" flex flex-col justify-center items-center font-serif pt-4  min-h-96 ">
       <h1 className="text-6xl py-8 text-center">
