@@ -21,6 +21,7 @@ export default function Overview() {
           height={1000}
           width={1000}
           className="w-full h-[700px]"
+          alt="overview img"
         />
         <div className="absolute z-20  md:top-[20%] md:w-[30rem] md:h-[27rem] md:left-[10%] top-16 ">
           <p className="text-6xl text-white">Understanding is Everythings</p>
@@ -173,6 +174,7 @@ export default function Overview() {
               height={1000}
               width={1000}
               className="px-4"
+              alt="overview img"
             />
           </div>
         </div>
